@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import requests
 from datetime import datetime
 import time
@@ -7,6 +9,7 @@ import json
 from pprint import pprint
 import logging
 import urllib3
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 logging.basicConfig(level=logging.DEBUG,
                     format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
